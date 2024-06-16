@@ -1,4 +1,3 @@
-import {Root} from "./types";
 import ical, {ICalCalendarMethod} from "ical-generator";
 // @ts-ignore
 import request from 'request';
