@@ -37,7 +37,6 @@ function processData(data) {
     if (match.score) {
       // if match is finished, add score
       result.summary += ` (${match.score.total.home} : ${match.score.total.away})`;
-      result.end = new Date(match.fullTimeAt ?? "");
     }
     return result;
   })
