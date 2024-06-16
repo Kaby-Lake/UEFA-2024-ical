@@ -2,10 +2,11 @@
   "name": "untitled",
   "version": "1.0.0",
   "description": "",
-  "main": "run.ts",
+  "type": "module",
+  "main": "run.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "ts-node run.ts"
+    "start": "ts-node run.js"
   },
   "keywords": [],
   "author": "",
