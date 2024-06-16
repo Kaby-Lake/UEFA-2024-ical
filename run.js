@@ -45,13 +45,13 @@ function processData(data) {
   events.forEach((event) => {
     calendar.createEvent(event);
   })
-
-  return events;
 }
 
 setInterval(() => {
   queryData();
 }, 1000 * 60 * 10);
+
+queryData();
 
 http.createServer((req, res) => {
   res.writeHead(200, {
