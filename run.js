@@ -17,7 +17,7 @@ function queryData() {
   });
 }
 
-let calendar = ical({name: 'UEFA 2024'});
+let calendar = ical({name: 'UEFA 2024', url: "https://uefa-2024-ical.onrender.com"});
 
 function processData(data) {
   calendar = ical({name: 'UEFA 2024'});
