@@ -60,6 +60,6 @@ http.createServer((req, res) => {
   });
 
   res.end(calendar.toString());
-}).listen(3000, '127.0.0.1', () => {
+}).listen(3000, '0.0.0.0', () => {
   console.log('Server running at http://127.0.0.1:3000/');
 });
