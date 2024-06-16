@@ -9,7 +9,7 @@ function queryData() {
   const url = 'https://match.uefa.com/v5/matches?competitionId=3&fromDate=2024-06-10&limit=100&offset=0&order=ASC&phase=ALL&seasonYear=2024&toDate=2024-09-20&utcOffset=8';
 
 
-  request(url, {json: true}, (err: any, res: any, body: any) => {
+  request(url, {json: true}, (err, res, body) => {
     if (err) {
       return console.log(err);
     }
@@ -20,7 +20,7 @@ function queryData() {
 
 let calendar = ical({name: 'UEFA 2024'});
 
-function processData(data: Root) {
+function processData(data) {
   calendar = ical({name: 'UEFA 2024'});
 
   calendar.method(ICalCalendarMethod.REQUEST);
